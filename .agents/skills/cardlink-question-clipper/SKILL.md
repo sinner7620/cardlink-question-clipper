@@ -1,6 +1,9 @@
 ---
 name: cardlink-question-clipper
 description: 从教材、习题册、试卷 PDF 或用户提供的文本摘题，在 MarginNote 中生成 CardLink 可匹配的题目卡和答案卡。适用于用户要求摘题、制卡或导入配套答案；单独咨询或排查 CardLink 的匹配行为时不使用。
+metadata:
+  version: "1.0.0"
+  author: frank
 ---
 
 # CardLink 摘题制卡

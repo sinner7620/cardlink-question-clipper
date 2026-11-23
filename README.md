@@ -4,6 +4,8 @@
 
 这是一个 **DeepSeek Harness (DSH) skill**：只包含给 Agent 的作业规程，不含可执行代码、不内置任何题库或答案。
 
+当前版本 **1.0.0** · 作者 frank · [变更记录](./CHANGELOG.md) · 许可证 [MIT](./LICENSE)
+
 ## 适用场景
 
 - 用户要求「摘题」「制卡」「把配套答案导进 MarginNote」时使用。
@@ -41,8 +43,10 @@ skill 正文分六节：确定材料与结构 → 准备 Bridge 任务包 → �
 
 ## 版本与兼容性
 
+版本号写在 `SKILL.md` 的 frontmatter `metadata.version` 与 [CHANGELOG.md](./CHANGELOG.md) 中，两者同步维护。
+
 正文中的 Bridge 路由与任务包行为来自已有的 v0.93 导入记录，CardLink 匹配行为按 2.4.7 / 2.4.8-b68 源码核对。设备端版本升级后应重新核对，实际以用户界面与当前工具契约为准。
 
 ## 许可证
 
-[MIT](./LICENSE)
+[MIT](./LICENSE) © 2026 frank
