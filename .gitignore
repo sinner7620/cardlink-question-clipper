@@ -1,0 +1,14 @@
+# 仅发布 skill 本体；本地素材与中间产物不入库
+reference/
+output/
+*.marginpkg
+
+# 本地工具的工作区忽略文件，不属于 skill 发布内容
+.zcodeignore
+
+# 系统与编辑器杂项
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
