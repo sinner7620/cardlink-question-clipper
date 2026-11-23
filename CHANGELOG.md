@@ -8,7 +8,7 @@
 
 ### 新增
 
-- 首次发布 `cardlink-question-clipper`：DeepSeek Harness skill，从教材、习题册、试卷 PDF 或用户提供的文本摘题，在 MarginNote 中生成 CardLink 可匹配的题目卡和答案卡。
+- 首次发布 `cardlink-question-clipper`：agent skill，从教材、习题册、试卷 PDF 或用户提供的文本摘题，在 MarginNote 中生成 CardLink 可匹配的题目卡和答案卡。
 - 三种材料结构：题目与答案同一份 PDF（答案作题目卡子卡）、题目与答案两份 PDF（题目册/答案册双分支）、仅提供文本（先排版成 PDF 再走摘录流程）。
 - Bridge 任务包规程：`POST /bundles/prepare` 与 `segments` 的用法、按 job/bundle 查询状态、读取 `source.json` 与 `OUTPUT-CONTRACT.md`、批次的续接与替换风险。
 - 摘题与配对：`role`/`section` 只作线索、按「章节或题组 + 原书题号」维护题答对照清单、缺答与待确认的标注方式。
