@@ -4,6 +4,14 @@
 
 ## [未发布]
 
+## [1.0.1] - 2026-11-24
+
+### 修复
+
+- 安装命令支持覆盖已有的 `SKILL.md`，同一命令可用于首次安装和更新。
+- 明确项目级安装位置、MN Bridge 接入前提，以及由用户在 CardLink 中完成绑定和索引刷新。
+- 对齐双册标题的说法。题目标题带章节编号和题号，唯一性按完整标题归一化规则判断。
+
 ## [1.0.0] - 2026-11-23
 
 ### 新增
@@ -12,7 +20,7 @@
 - 三种材料结构：题目与答案同一份 PDF（答案作题目卡子卡）、题目与答案两份 PDF（题目册/答案册双分支）、仅提供文本（先排版成 PDF 再走摘录流程）。
 - Bridge 任务包规程：`POST /bundles/prepare` 与 `segments` 的用法、按 job/bundle 查询状态、读取 `source.json` 与 `OUTPUT-CONTRACT.md`、批次的续接与替换风险。
 - 摘题与配对：`role`/`section` 只作线索、按「章节或题组 + 原书题号」维护题答对照清单、缺答与待确认的标注方式。
-- `result.md` 生成规则：只用能出图的 `[block: …]` 锚点、子卡颜色元数据、双册标题「完整章节名 + 原书题号」并按 NFKC 归一化后唯一。
+- `result.md` 生成规则：只用能出图的 `[block: …]` 锚点、子卡颜色元数据、双册标题带章节编号和原书题号，且按完整标题归一化规则唯一。
 - 提交与核对：`POST /bundles/{bundleId}/submit`、回执警告处理、树形与批量笔记读回、快照 ID 记录。
 - 第 6 节「交付用户自行配置 CardLink」：Bridge 只用于摘题/导入/读回，绑定与索引刷新由用户在 MarginNote 内完成。
 
@@ -22,3 +30,5 @@
 - 原书缺答案或对应关系不确定时只导题目卡，答案留空并在交付清单标明。
 
 [1.0.0]: https://github.com/sinner7620/cardlink-question-clipper/releases/tag/v1.0.0
+
+[1.0.1]: https://github.com/sinner7620/cardlink-question-clipper/releases/tag/v1.0.1
